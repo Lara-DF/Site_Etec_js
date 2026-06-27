@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vestibulinho - Etec Zona Leste</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+
+    <style>
+        /* --- ESTILOS GERAIS --- */
+        body { 
+            font-family: 'Roboto', sans-serif; 
+            margin: 0;
+            background: url('https://i.ytimg.com/vi/HDUT3DwQb0Y/maxresdefault.jpg') no-repeat center center fixed;
+            background-size: cover;
+        }
+
+        .camada-fundo {
+            background: rgba(0, 0, 0, 0.6);
+            min-height: 100vh;
+        }
+
+        /* --- TOPO --- */
+        .topo-site { 
+            background: #b20000; 
+            padding: 15px 20px; 
+            border-bottom: 5px solid #800000;
+        }
+        
+        .logo-etec { 
+            color: white; 
+            text-decoration: none; 
+            font-weight: bold; 
+            font-size: 1.5rem;
+        }
+
+        /* --- BANNER --- */
+        .banner-vestibulinho { 
+            background: rgba(0, 0, 0, 0.7); 
+            color: white; 
+            padding: 60px 20px; 
+            text-align: center;
+            backdrop-filter: blur(5px);
+        }
+
+        /* --- CONTEÚDO (EFEITO VIDRO) --- */
+        .card-informativo {
+            background: rgba(255, 255, 255, 0.15);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            border-radius: 20px;
+            padding: 30px;
+            color: white;
+            margin-bottom: 30px;
+        }
+
+        .titulo-destaque {
+            color: #ffffff;
+            font-weight: bold;
+            border-bottom: 2px solid #b20000;
+            display: inline-block;
+            margin-bottom: 20px;
+        }
+
+        .botao-inscricao {
+            background-color: #b20000;
+            color: white;
+            padding: 15px 30px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: bold;
+            text-transform: uppercase;
+            display: inline-block;
+            transition: 0.3s;
+            border: none;
+        }
+
+        .botao-inscricao:hover {
+            background-color: #ff0000;
+            transform: scale(1.05);
+            color: white;
+        }
+
+        .passo-a-passo {
+            background: rgba(178, 0, 0, 0.3);
+            padding: 15px;
+            border-radius: 10px;
+            margin-bottom: 10px;
+            border-left: 5px solid #b20000;
+        }
+
+        .rodape {
+            background: #111;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 50px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="camada-fundo">
+
+    <header class="topo-site d-flex justify-content-between align-items-center">
+        <a class="logo-etec" href="eteczl.html">Etec Zona Leste</a>
+
+        <div class="dropdown">
+            <button class="btn btn-danger dropdown-toggle" type="button" data-bs-toggle="dropdown">
+                Menu de Navegação
+            </button>
+            <ul class="dropdown-menu dropdown-menu-end"> 
+                <li><a class="dropdown-item" href="eteczl.html">Início</a></li>
+                <li><a class="dropdown-item" href="cursos.html">Cursos</a></li>
+                <li><a class="dropdown-item text-danger fw-bold" href="vestibulinho.html">Vestibulinho</a></li>
+                <li><a class="dropdown-item" href="contato.php">Contato</a></li>
+                <li><a class="dropdown-item" href="gre,io.html">Grêmio</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <section class="banner-vestibulinho">
+        <h1 class="display-4 fw-bold">Vestibulinho Etec</h1>
+        <p class="lead">O seu futuro começa aqui. Inscreva-se para o próximo semestre!</p>
+    </section>
+
+    <main class="container py-5">
+        <div class="row">
+            
+            <div class="col-md-7">
+                <div class="card-informativo shadow">
+                    <h2 class="titulo-destaque">Como Ingressar?</h2>
+                    <p>O ingresso nas Etecs acontece através de um processo seletivo chamado Vestibulinho. Ele é realizado duas vezes por ano.</p>
+                    
+                    <div class="passo-a-passo">
+                        <strong>1. Verifique o Calendário:</strong> Fique atento às datas de inscrição no site oficial.
+                    </div>
+                    <div class="passo-a-passo">
+                        <strong>2. Escolha seu Curso:</strong> Veja as opções disponíveis na nossa unidade na página de cursos.
+                    </div>
+                    <div class="passo-a-passo">
+                        <strong>3. Faça a Prova:</strong> Prepare-se para o exame que abrange os conteúdos do Ensino Fundamental.
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-5">
+                <div class="card-informativo text-center shadow">
+                    <h2 class="titulo-destaque">Inscrições Abertas</h2>
+                    <p class="mb-4">Não perca o prazo! Clique no botão abaixo para ser redirecionado ao site oficial do Vestibulinho Etec.</p>
+                    <a href="https://www.vestibulinhoetec.com.br" target="_blank" class="botao-inscricao">
+                        Ir para o Site Oficial <i class="fas fa-external-link-alt ms-2"></i>
+                    </a>
+                </div>
+                
+                <div class="card-informativo text-center shadow">
+                    <h3 class="h5">Dúvidas sobre o Processo?</h3>
+                    <p>Mande uma mensagem para nossa equipe de suporte.</p>
+                    <a href="contato.php" class="btn btn-outline-light rounded-pill">Fale Conosco</a>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <footer class="rodape">
+
+&copy; 2026 Etec Zona Leste - Todos os direitos reservados por Lara de Freitas
+    </footer>
+
+</div> <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

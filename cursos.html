@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cursos - Etec Zona Leste</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+
+    <style>
+        /* --- ESTILOS GERAIS (Igual à Home) --- */
+        body { 
+            font-family: 'Roboto', sans-serif; 
+            margin: 0;
+            background: url('https://i.ytimg.com/vi/HDUT3DwQb0Y/maxresdefault.jpg') no-repeat center center fixed;
+            background-size: cover;
+        }
+
+        /* Camada escura para o fundo */
+        .fundo-escuro {
+            background: rgba(0, 0, 0, 0.5);
+            min-height: 100vh;
+        }
+
+        /* --- TOPO --- */
+        .topo-site { 
+            background: #b20000; 
+            padding: 15px 20px; 
+            border-bottom: 5px solid #800000;
+        }
+        
+        .logo-etec { 
+            color: white; 
+            text-decoration: none; 
+            font-weight: bold; 
+            font-size: 1.5rem;
+        }
+
+        /* --- SESSÃO TITULO --- */
+        .banner-titulo { 
+            background: rgba(0, 0, 0, 0.7); 
+            color: white; 
+            padding: 60px 20px; 
+            text-align: center;
+            backdrop-filter: blur(5px);
+        }
+
+        /* --- GRID DE CURSOS --- */
+        .sessao-cursos {
+            padding: 50px 0;
+        }
+
+        .card-curso {
+            background: rgba(255, 255, 255, 0.281); /* Efeito Vidro */
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            border-radius: 20px;
+            padding: 25px;
+            color: white;
+            height: 100%; /* Deixa todos do mesmo tamanho */
+            transition: 0.3s;
+            text-align: center;
+        }
+
+        .card-curso:hover {
+            transform: translateY(-10px);
+            background: rgba(255, 255, 255, 0.25);
+        }
+
+        .card-curso h5 {
+            color: #ffffff; /* Vermelho mais claro para destacar no fundo escuro */
+            font-weight: bold;
+            margin-bottom: 15px;
+        }
+
+        .etiqueta-tecnico {
+            background: #b20000;
+            color: white;
+            padding: 5px 12px;
+            border-radius: 50px;
+            font-size: 12px;
+            text-transform: uppercase;
+            font-weight: bold;
+            display: inline-block;
+            margin-bottom: 15px;
+        }
+
+        /* --- SESSÃO INFERIOR --- */
+        .info-extra {
+            background: rgba(0, 0, 0, 0.85);
+            color: white;
+            padding: 40px;
+            margin: 40px auto;
+            border-radius: 15px;
+            max-width: 900px;
+            text-align: center;
+        }
+
+        .rodape {
+            background: #111;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 50px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="fundo-escuro">
+
+    <header class="topo-site d-flex justify-content-between align-items-center">
+        <a class="logo-etec" href="eteczl.html">Etec Zona Leste</a>
+
+        <div class="dropdown">
+            <button class="btn btn-danger dropdown-toggle" type="button" data-bs-toggle="dropdown">
+                Menu de Navegação
+            </button>
+            <ul class="dropdown-menu dropdown-menu-end"> 
+                <li><a class="dropdown-item" href="eteczl.html">Início</a></li>
+                <li><a class="dropdown-item text-danger fw-bold" href="cursos.html">Cursos</a></li>
+                <li><a class="dropdown-item" href="vestibulinho.html">Vestibulinho</a></li>
+                <li><a class="dropdown-item" href="contato.php">Contato</a></li>
+                <li><a class="dropdown-item" href="gre,io.html">Grêmio</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <section class="banner-titulo">
+        <h1 class="display-4 fw-bold">Nossos Cursos</h1>
+        <p class="lead">Educação pública, gratuita e de alta qualidade.</p>
+    </section>
+
+    <main class="container sessao-cursos">
+        <div class="row g-4">
+
+            <div class="col-md-4">
+                <div class="card-curso">
+                    <h5>Administração</h5>
+                    <span class="etiqueta-tecnico">Técnico / M-Tec</span>
+                    <p>Aprenda gestão, organização empresarial e processos administrativos para o mercado.</p>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card-curso">
+                    <h5>Desenvolvimento de Sistemas</h5>
+                    <span class="etiqueta-tecnico">M-Tec / AMS / Técnico</span>
+                    <p>Criação de softwares, apps e banco de dados usando as tecnologias mais atuais.</p>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card-curso">
+                    <h5>Logística</h5>
+                    <span class="etiqueta-tecnico">Técnico / M-Tec</span>
+                    <p>Planejamento de transporte, estoques e armazenamento de mercadorias.</p>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card-curso">
+                    <h5>Contabilidade</h5>
+                    <span class="etiqueta-tecnico">Técnico / M-Tec / AMS</span>
+                    <p>Foco em tributos, finanças e saúde contábil das organizações.</p>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card-curso">
+                    <h5>Recursos Humanos</h5>
+                    <span class="etiqueta-tecnico">Técnico / M-Tec</span>
+                    <p>Treinamento, recrutamento e gestão de talentos nas empresas.</p>
+                </div>
+            </div>
+
+               <div class="col-md-4">
+                <div class="card-curso">
+                    <h5>Serviços Jurídicos</h5>
+                    <span class="etiqueta-tecnico">Técnico</span>
+                    <p>Apoio administrativo em escritórios de advocacia e cartórios.</p>
+                </div>
+            </div>
+
+
+               <div class="col-md-4">
+                <div class="card-curso">
+                    <h5>Finanças</h5>
+                    <span class="etiqueta-tecnico">Técnico</span>
+                    <p>Ideal para quem quer aprender a economizar, sair de dívidas e começar a investir.</p>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <section class="info-extra shadow">
+        <h3>Diferenciais Etec</h3>
+        <div class="row mt-4">
+            <div class="col-6 col-md-3"><i class="fas fa-check-circle text-danger"></i> 100% Gratuito</div>
+            <div class="col-6 col-md-3"><i class="fas fa-check-circle text-danger"></i> Prática Real</div>
+            <div class="col-6 col-md-3"><i class="fas fa-check-circle text-danger"></i> Professores Atuantes</div>
+            <div class="col-6 col-md-3"><i class="fas fa-check-circle text-danger"></i> Diploma Forte</div>
+        </div>
+    </section>
+
+    <footer class="rodape">
+
+&copy; 2026 Etec Zona Leste - Todos os direitos reservados por Lara de Freitas
+    </footer>
+
+
+</div> <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
